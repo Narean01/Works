@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Interface</title>
+<style>
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2320ed;
+  }
+
+  .background-svg {
+    position: absolute;
+    width: 108px; /* This is the width of the SVG */
+    height: 231px; /* This is the height of the SVG */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center the SVG */
+    z-index: 0; /* Keep the SVG in the background */
+  }
+
+  .Chip {
+  width: 72px; /* Set the width and height based on your design */
+  height: 51px;
+  background-image: url('/Users/apple/Documents/My works/Ui design/Card interface/Chip.svg');
+  /* You may need to adjust the background properties based on your design */
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+
+  .card-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-number {
+    display: flex;
+    justify-content: center;
+    font-size: 18px; /* Adjust the size as needed */
+    letter-spacing: 4px; /* Spacing between the characters */
+  }
+
+  .card-valid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .card-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+  .sphere {
+        width: 413px; 
+        height: 403px; 
+        left: 38.73px; 
+        top: 624.21px; 
+        position: absolute; 
+        transform: rotate(-50.61deg); 
+        transform-origin: 0 0; 
+        background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%), 
+                              linear-gradient(180deg, #E64BFF 3%, rgba(32.70, 61.66, 213.74, 0.85) 31%, rgba(240.78, 11.59, 11.59, 0.65) 62%, rgba(193.44, 164.47, 255, 0.85) 100%); 
+        box-shadow: 0px 34px 34px 6px rgba(253.62, 204.22, 204.22, 0.84) inset; 
+        border-radius: 9999px
+    }
+
+  .sphere:nth-child(1) {
+  top: 20%;
+  left: 10%;
+  }
+
+  .sphere:nth-child(2) {
+  top: 50%;
+  right: 10%;
+  }
+
+  .sphere:nth-child(3) {
+  bottom: 10%;
+  left: 30%;
+  }
+
+  .card {
+    width: 328px; /* Adjust to the size of iPhone 12 mini */
+    height: 514px; /* Adjust to the size of iPhone 12 mini */
+    border-radius: 24px; /* Adjust the border-radius to match your design */
+    background: linear-gradient(180deg, rgba(247, 132, 242, 0.53) 32.29%, rgba(244, 99, 99, 0.00) 100%); /* Gradient background */
+    backdrop-filter: blur(35px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Use a font family that matches your design */
+    "width: 100%; 
+    height: 100%; 
+    
+  }
+
+
+</style>
+</head>
+<body>
+
+ <div class="background-svg">
+    <!-- Insert your SVG code here -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="108" height="231" viewBox="0 0 108 231" fill="none">
+      <!-- SVG contents -->
+    </svg>
+  </div>
+
+<div class="card">
+  <div class="card-logo"></div>
+  <div class="card-number">5550 9898 1098 8981</div>
+  <div class="card-valid">
+    <div>VALID THRU</div>
+    <div>06/22</div>
+  </div>
+  <div class="card-name">Innovent Design</div>
+</div>
+<div class="Chip"></div>
+
+
+</body>
+</html>
